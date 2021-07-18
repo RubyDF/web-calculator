@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web calculator</title>
+</head>
+<body>
+    <form name= "calculator">
+       Problem A: <input class="input-a" type="text" name="txtnum1">
+       <br>
+       Problem B: <input class="input-b" type="text" name="txtnum2">
+       <br>
+       Answer : <input class='answer' type="text" name="txtres">
+       <br>
+       <input type="button" value="submit" onclick="sumvalues()">
+    </form>
+    <script type="text/javascript">
+
+        function sumvalues()
+        {
+            var num1, num1, res;
+            num1=Number(document.querySelector('.input-a').value);
+            num2=Number(document.querySelector('.input-b').value);
+            res=num1+num2;
+            document.querySelector('.answer').value=res;
+        }
+        
+    </script>
+</body>
+</html>
+
